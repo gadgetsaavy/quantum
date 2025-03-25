@@ -1,0 +1,126 @@
+
+╭╮╭╮╭┳━━━┳━━━┳╮╭━┳━━━┳╮╱╱╭━━━┳╮╭╮╭╮
+┃┃┃┃┃┃╭━╮┃╭━╮┃┃┃╭┫╭━━┫┃╱╱┃╭━╮┃┃┃┃┃┃
+┃┃┃┃┃┃┃╱┃┃╰━╯┃╰╯╯┃╰━━┫┃╱╱┃┃╱┃┃┃┃┃┃┃
+┃╰╯╰╯┃┃╱┃┃╭╮╭┫╭╮┃┃╭━━┫┃╱╭┫┃╱┃┃╰╯╰╯┃
+╰╮╭╮╭┫╰━╯┃┃┃╰┫┃┃╰┫┃╱╱┃╰━╯┃╰━╯┣╮╭╮╭╯
+╱╰╯╰╯╰━━━┻╯╰━┻╯╰━┻╯╱╱╰━━━┻━━━╯╰╯╰╯
+
++----------------------------------------------------+
+|          Deployment Stage                          |
+|                                                    |
+|  1. Deploy Smart Contract                          |
+|     > Use Truffle or Hardhat to                    |
+|       deploy and migrate the                       |
+|       smart contract onto the                      |
+|       chosen Ethereum network                      |
+|                                                    |
+|  2. Configure Environment                          |
+|     > Update aggregator URL                        |
+|       and contract address in                      |
+|       `aggregator.py`                              |
++----------------------------------------------------+
+                        |
+                        |
+                        v
++----------------------------------------------------+
+|         Testing Stage                              |
+|                                                    |
+|  1. Unit Testing on Testnet                        |
+|     > Test smart contract and                      |
+|       aggregator modules using                     |
+|       tools like Hardhat or                        |
+|       Truffle for unit tests.                      |
+|                                                    |
+|  2. Integration Testing                            |
+|     > Test interactions between                    |
+|       Python scripts and smart                     |
+|       contract, simulating                         |
+|       real trades.                                 |
+|                                                    |
+|  3. Realistic Market Scenarios                     |
+|     > Use testnet tokens for                       |
+|       realistic trading scenarios.                 |
++----------------------------------------------------+
+                        |
+                        |
+                        v
++----------------------------------------------------+
+|         Configuration Stage                        |
+|                                                    |
+|  1. Configure Environment                          |
+|     > Set API keys, wallet                         |
+|       addresses, and contract info                 |     
+|       in your configuration files                  |
+|       (e.g., `config.json`)                        |
+|                                                    |
+|  2. Set Up Alerts/Logs                             |
+|     > Implement logging for                        |
+|       trade transactions and                       |
+|       errors. Use a logging framework like         |
+|       Python's logging module.                     |
++----------------------------------------------------+
+                        |
+                        |
+                        v
++----------------------------------------------------+
+|          Launch Stage                              |
+|                                                    |
+|  1. Start the Aggregator                           |
+|     > Run the aggregator script                    |
+|       using                                        |
+|       > ./launch.sh                                |
+|                                                    |
+|  2. Monitor Initial Activity                       |
+|     > Use console logs to                          |
+|       monitor the first few                        |
+|       arbitrage opportunities                      |
+|       detected and executed.                       |
++----------------------------------------------------+
+                        |
+                        |
+                        v
++----------------------------------------------------+
+|         Operation Stage                            |
+|                                                    |
+|  1. Regular Monitoring                             |
+|     > Continuously monitor                         |
+|       logs and transaction outputs.                |
+|                                                    |
+|  2. Adjust Parameters                              |
+|     > Adjust minimum profit                        |
+|       thresholds based on market                   |
+|       conditions.                                  |
+|                                                    |
+|  3. Performance Review                             |
+|     > Conduct periodic reviews of                  |
+|       performance metrics                          |
+|       and profitability.                           |
+|                                                    |
+|  4. Optimize and Iterate                           |
+|     > Based on performance, refine                 |
+|       scripts, strategies, or                      |
+|       variables based on how they                  |
+|       perform.                                     |
++----------------------------------------------------+
+                        |
+                        |
+                        v
++----------------------------------------------------+
+|      Termination & Maintenance                     |
+|                                                    |
+|  1. Safe Shutdown Procedures                       |
+|     > If needed, ensure all open                   |
+|       transactions are completed                   |
+|       before termination.                          |
+|                                                    |
+|  2. Code Maintenance                               |
+|     > Keep dependencies updated                    |
+|       and address any reported                     |
+|       issues or emerging vulnerabilities.          |
+|                                                    |
+|  3. Community Engagement                           |
+|     > Keep engaging with the community for inputs, |
+|       updates, and insights                        |
+|       about market trends.                         |
++----------------------------------------------------+
